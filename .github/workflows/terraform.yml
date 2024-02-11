@@ -26,8 +26,8 @@ jobs:
       # Log in to the Azure CLI
     - name: Login via Azure CLI
     - run: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
